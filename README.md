@@ -8,11 +8,11 @@ The Advanced AI Code Agent is an AI-powered system that automates the process of
 ## Main Features
 Task Decomposition: Automatically breaks down a complex main task into multiple smaller subtasks. Each subtask corresponds to a specific tool or function designed to handle a part of the problem, resulting in a clear and structured JSON plan.
 
-## Dynamic Code Generation & Execution: For each subtask, the agent:
-
-### Generates Python code tailored to solve that specific subtask.
-### Executes the code to obtain outputs.
-### Feeds the output of one subtask as the input for the next, ensuring seamless data flow across the entire process.
+## Dynamic Code Generation & Execution: 
+For each subtask, the agent:
+Generates Python code tailored to solve that specific subtask.
+Executes the code to obtain outputs.
+Feeds the output of one subtask as the input for the next, ensuring seamless data flow across the entire process.
 
 ## Flexible Tool Creation:
 Library-Based Tools: Easily integrate Python libraries by specifying their names and usage examples. The agent can automatically generate code that leverages these libraries.
