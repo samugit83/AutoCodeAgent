@@ -1,9 +1,6 @@
 
 from flask import Flask, request, jsonify, render_template
 import os
-from state_machine import run_machine
-from session_manager import SessionManager
-from interactive_multiagent.planner import AgentPlanner
 from code_agent.code_agent import CodeAgent
 import logging
 import traceback
@@ -23,7 +20,6 @@ REDIS_HOST = os.getenv("REDIS_HOST", "redis")
 REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
 REDIS_DB = int(os.getenv("REDIS_DB", 0))
 
-session_manager = SessionManager(redis_host=REDIS_HOST, redis_port=REDIS_PORT, db=REDIS_DB)
 
 @app.route('/')
 def index():
